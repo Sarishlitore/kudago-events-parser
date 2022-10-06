@@ -7,3 +7,5 @@
 /.idea/inspectionProfiles/Project_Default.xml
 /.idea/vcs.xml
 /.idea/.gitignore
+/results/results.json
+/results/event_urls.txt

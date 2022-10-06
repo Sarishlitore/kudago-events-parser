@@ -54,7 +54,6 @@ class KudagoEventParser:
             # return re.sub(r'(\d)\s+(\d)', r'\1\2', price) if not None else None
             return price
 
-
         event['title'] = soup_find_stripped_text('h1', class_='post-big-title')
         event['short_description'] = soup_find_stripped_text('div', id='item-description')
         event['full_desctiption'] = soup_find_stripped_text('div', id='item-description')
