@@ -51,8 +51,9 @@ class KudagoEventParser:
 
         def remove_spaces_between_numbers(price):
             """Example: 8 000 -> 8000"""
-            # return re.sub(r'(\d)\s+(\d)', r'\1\2', price) if not None else None
-            return price
+            if price is not None:
+                return re.sub(r'(\d)\s+(\d)', r'\1\2', price)
+            return None
 
         event['title'] = soup_find_stripped_text('h1', class_='post-big-title')
         event['short_description'] = soup_find_stripped_text('div', id='item-description')

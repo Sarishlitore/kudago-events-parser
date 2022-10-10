@@ -9,3 +9,4 @@
 /.idea/.gitignore
 /results/results.json
 /results/event_urls.txt
+/results/vinyls.json
